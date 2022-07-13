@@ -1,0 +1,43 @@
+<section id="contact"> 
+	<div className="App" class="row text-center" >
+  		<div class="col-md-8 col-md-offset-2">
+   			 <h3> Register User </h3>
+   			 <input data-sr="enter top over 1s, wait 0.3s, move 24px, reset" type="email" class="form-control" id="mc-email" name="mc-email"
+      		placeholder="Email..."
+      		onChange={(event) => {
+        	setRegisterEmail(event.target.value);
+      }}
+    />
+    <input data-sr="enter top over 1s, wait 0.3s, move 24px, reset" type="email" class="form-control" id="mc-email" name="mc-email"
+      placeholder="Password..."
+      onChange={(event) => {
+        setRegisterPassword(event.target.value);
+      }}
+    />
+    <button  data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset" type="submit" class="button-leweb"onClick={register}> Create User</button>
+  </div>
+  <div class="col-md-8 col-md-offset-2">
+    <h3> Login </h3>
+    <input data-sr="enter top over 1s, wait 0.3s, move 24px, reset" type="email" class="form-control" id="mc-email" name="mc-email"
+      placeholder="Email..."
+      onChange={(event) => {
+        setLoginEmail(event.target.value);
+      }}
+    />
+    <input data-sr="enter top over 1s, wait 0.3s, move 24px, reset" type="email" class="form-control" id="mc-email" name="mc-email"
+      placeholder="Password..."
+      onChange={(event) => {
+        setLoginPassword(event.target.value);
+      }}
+    />
+    <button data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset" type="submit" class="button-leweb" onClick={login}> Login</button>
+  </div> 
+  <div class="col-md-8 col-md-offset-2"> 
+  <h4> User Logged In: </h4> 
+	{user?.email} 
+	<button data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset" type="submit" class="button-leweb" onClick={logout} > Sign Out </button>
+  </div>
+  
+</div>
+	
+</section>
